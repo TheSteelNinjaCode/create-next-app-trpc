@@ -40,12 +40,13 @@ This command will create a new Next.js project and set up the necessary configur
 
 # Project Structure
 
+```bash
 map -> .
 ├── prisma  # <-- if prisma is added
 │   └── [...]
 ├── src
 │   ├── app
-│   │   ├── _trpc  # <-- add `withTRPC()`-HOC here
+│   │   ├── _trpc  # <-- add withTRPC()-HOC here
 │   │   │   └── client.ts  # <-- tRPC client
 │   │   │   └── Provider.tsx  # <-- tRPC provider
 │   │   │   └── serverClient.ts  # <-- tRPC server client
@@ -63,6 +64,7 @@ map -> .
 │   │   └── trpc.ts      # <-- procedure helpers
 │   └── [...]
 └── [...]
+```
 
 ## What's Included?
 
