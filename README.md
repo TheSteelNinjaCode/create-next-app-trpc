@@ -38,6 +38,32 @@ This command will create a new Next.js project and set up the necessary configur
 - App Router Configuration (--app): Pre-configured router setup for immediate use.
 - Import Aliases (--import-alias): Simplify imports with the default alias "@/\*" for cleaner code.
 
+# Project Structure
+
+map -> .
+├── prisma  # <-- if prisma is added
+│   └── [...]
+├── src
+│   ├── app
+│   │   ├── _trpc  # <-- add `withTRPC()`-HOC here
+│   │   │   └── client.ts  # <-- tRPC client
+│   │   │   └── Provider.tsx  # <-- tRPC provider
+│   │   │   └── serverClient.ts  # <-- tRPC server client
+│   │   ├── api
+│   │   │   └── trpc
+│   │   │       └── [trpc]
+│   │   │           └── route.ts  # <-- tRPC HTTP handler
+│   │   └── [...]
+│   ├── server
+│   │   ├── routers
+│   │   │   ├── user.ts  # <-- sub routers (optional)
+│   │   │   ├── post.ts  # <-- sub routers (optional)
+│   │   │   └── [...]
+│   │   ├── index.ts  # <-- main router
+│   │   └── trpc.ts      # <-- procedure helpers
+│   └── [...]
+└── [...]
+
 ## What's Included?
 
 The package will set up a new Next.js project with the following packages pre-installed:
