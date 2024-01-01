@@ -79,6 +79,23 @@ The package will set up a new Next.js project with the following packages pre-in
 
 These dependencies are essential for working with tRPC and React Query in a Next.js project.
 
+## Example
+
+To demonstrate how you can use `create-next-app-trpc`, here's a basic example:
+
+```bash
+"use client";
+
+import { trpc } from "./_trpc/client";
+
+export default function Home() {
+  const greeting = trpc.greeting.useQuery();
+  return <h1>{greeting.data ?? "No data"}</h1>;
+}
+```
+
+This example shows how to set up a simple tRPC router using create-next-app-trpc
+
 ## Contributing
 
 Contributions to `create-next-app-trpc` are welcome. If you have any suggestions, bug reports, or pull requests, feel free to open an issue or submit a pull request on the repository.
