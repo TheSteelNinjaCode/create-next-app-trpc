@@ -94,7 +94,7 @@ export default function Home() {
 }
 ```
 
-This example shows how to set up a simple tRPC router using create-next-app-trpc
+This example shows how to set up a simple tRPC router using `create-next-app-trpc`
 
 ## Contributing
 
