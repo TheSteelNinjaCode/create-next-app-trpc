@@ -83,6 +83,11 @@ The package will set up a new Next.js project with the following packages pre-in
 - decimal.js
 - superjson
 
+And if Prisma support is added:
+
+- prisma
+- @prisma/client
+
 These dependencies are essential for working with tRPC and React Query in a Next.js project.
 
 ## Example
