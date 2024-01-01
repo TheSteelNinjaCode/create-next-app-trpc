@@ -88,7 +88,7 @@ And if Prisma support is added:
 - prisma
 - @prisma/client
 
-These dependencies are essential for working with tRPC and React Query in a Next.js project.
+These dependencies are essential for working with tRPC and React Query (and Prisma, if opted) in a Next.js project.
 
 ## Example
 
