@@ -29,6 +29,12 @@ npx create-next-app-trpc
 
 This command will create a new Next.js project and set up the necessary configurations for tRPC and React Query.
 
+## Prisma Support
+
+`create-next-app-trpc` now includes optional support for Prisma, an open-source database toolkit. This feature allows you to seamlessly integrate Prisma into your Next.js project, providing a robust solution for handling database operations with ease.
+
+To include Prisma in your project setup, simply select 'Yes' when prompted during the creation process. This will automatically configure Prisma in your new Next.js project, saving you the time and effort of manual setup.
+
 ## Features
 
 `create-next-app-trpc` sets up a Next.js project with the following default features:
