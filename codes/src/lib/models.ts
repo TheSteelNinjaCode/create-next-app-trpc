@@ -7,7 +7,6 @@ const BigInt = z.coerce.bigint();
 const Float = z.coerce.number();
 const Boolean = z.boolean();
 const DateTime = z.coerce.date();
-const Json = z.any();
 const Decimal = z.custom<DecimalPackage>((val) => {
   if (val instanceof DecimalPackage) {
     return { success: true, data: val };
