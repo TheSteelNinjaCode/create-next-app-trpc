@@ -15,6 +15,6 @@ const t = initTRPC.create({
     transformer: superjson,
 });
 
-export const router = t.router;
+export const { createCallerFactory, router } = t;
 export const middleware = t.middleware;
 export const publicProcedure = t.procedure;

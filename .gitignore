@@ -3,3 +3,4 @@ node_modules
 
 # index code base
 index-code.js
+index-code-min.js

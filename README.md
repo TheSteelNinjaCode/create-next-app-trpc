@@ -49,6 +49,10 @@ To include Prisma in your project setup, simply select 'Yes' when prompted durin
 ```bash
 map -> .
 ├── prisma  # <-- if prisma is added
+│   ├── migrations # <-- if prisma is added
+│   │   └── [...]
+│   ├── schema.prisma # <-- if prisma is added
+│   ├── seed.js # <-- if prisma is added
 │   └── [...]
 ├── src
 │   ├── app
@@ -61,8 +65,13 @@ map -> .
 │   │   │       └── [trpc]
 │   │   │           └── route.ts  # <-- tRPC HTTP handler
 │   │   └── [...]
-│   ├── server
-│   │   ├── routers
+│   ├── lib # <-- utility functions
+│   │   ├── prisma.ts  # <-- prisma client (if prisma is added)
+│   │   ├── models.ts  # <-- zod models (if zod is added)
+│   │   ├── types.ts  # <-- types (if zod is added)
+│   │   └── [...]
+│   ├── server # <-- server-side code
+│   │   ├── routers # <-- routers
 │   │   │   ├── user.ts  # <-- sub routers (optional)
 │   │   │   ├── post.ts  # <-- sub routers (optional)
 │   │   │   └── [...]
@@ -83,12 +92,15 @@ The package will set up a new Next.js project with the following packages pre-in
 - decimal.js
 - superjson
 
-And if Prisma support is added:
+In addition to these, create-next-app-trpc also offers optional support for:
 
-- prisma
-- @prisma/client
+- Prisma: If opted, adds `prisma` and `@prisma/client` for robust database management.
+- Zod: If chosen, includes `zod` for TypeScript-first schema validation.
+- React-Hook-Form: If selected, integrates `react-hook-form` for efficient form handling in React applications.
 
-These dependencies are essential for working with tRPC and React Query (and Prisma, if opted) in a Next.js project.
+These optional integrations can be added during the setup process, enhancing your development experience with additional capabilities tailored to your project's needs.
+
+These dependencies and optional integrations are key in providing a robust setup for working with tRPC and React Query (along with Prisma, Zod, and react-hook-form, if opted) in a Next.js project.
 
 ## Example
 
@@ -106,6 +118,19 @@ export default function Home() {
 ```
 
 This example shows how to set up a simple tRPC router using `create-next-app-trpc`
+
+## Documentation and Resources
+
+For comprehensive guides and best practices, refer to the official documentation of each tool and library integrated with `create-next-app-trpc`:
+
+- Next.js Documentation: [Next.js Official Docs](https://nextjs.org/docs/getting-started)
+- tRPC Documentation: [tRPC Official Docs](https://trpc.io/)
+- Prisma Documentation: [Prisma Official Docs](https://www.prisma.io/docs/)
+- Zod Documentation: [Zod Official Docs](https://zod.dev/)
+- React-Hook-Form Documentation: [react-hook-form Official Docs](https://react-hook-form.com/)
+- React Query Documentation: [React Query Official Docs](https://react-query.tanstack.com/)
+- Superjson Documentation: [Superjson Official Docs](https://www.npmjs.com/package/superjson)
+- Decimal.js Documentation: [Decimal.js Official Docs](https://mikemcl.github.io/decimal.js/)
 
 ## Contributing
 
