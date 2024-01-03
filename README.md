@@ -31,7 +31,19 @@ This command will create a new Next.js project and set up the necessary configur
 
 ## Prisma Support
 
-`create-next-app-trpc` now includes optional support for Prisma, an open-source database toolkit. This feature allows you to seamlessly integrate Prisma into your Next.js project, providing a robust solution for handling database operations with ease.
+`create-next-app-trpc` now includes optional support for Prisma, an open-source database toolkit, making your project ready for deployment with efficient and time-saving features. When you opt for Prisma, your project will be equipped with the following:
+
+- Prisma Seed: Prisma's seeding functionality is added for easy database setup. This is reflected in your package.json file under the Prisma configuration as follows:
+
+  ```bash
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+  ```
+
+  This configuration ensures that the `prisma/seed.js` script is executed to seed your database, providing a convenient way to populate your database with initial data.
+
+- Automatic Prisma Client Generation: In your `package.json`, the `postinstall` script is configured as `"postinstall": "prisma generate"`. This ensures that the Prisma client is automatically generated after installation, simplifying your deployment process.
 
 To include Prisma in your project setup, simply select 'Yes' when prompted during the creation process. This will automatically configure Prisma in your new Next.js project, saving you the time and effort of manual setup.
 

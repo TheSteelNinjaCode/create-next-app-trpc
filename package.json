@@ -1,7 +1,7 @@
 {
   "name": "create-next-app-trpc",
-  "version": "1.0.7",
-  "description": "A package for quickly creating Next.js Latest projects with tRPC and React Query",
+  "version": "1.0.8",
+  "description": "A package for quickly creating Latest Next.js projects with tRPC and React Query",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -14,6 +14,11 @@
     "nextjs",
     "trpc",
     "react-query",
+    "prisma",
+    "zod",
+    "react-hook-form",
+    "decimal.js",
+    "superjson",
     "boilerplate"
   ],
   "author": "Jefferson Abraham Omier",

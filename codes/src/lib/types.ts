@@ -2,7 +2,7 @@ import { z } from "zod";
 import { UserSchema } from "./models";
 
 export type User = z.infer<typeof UserSchema>;
-export const defaultUser: User = {
+export const defaultUserValues: User = {
   id: "",
   name: null,
   email: null,
