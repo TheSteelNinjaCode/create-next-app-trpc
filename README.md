@@ -44,6 +44,7 @@ This command will create a new Next.js project and set up the necessary configur
   This configuration ensures that the `prisma/seed.js` script is executed to seed your database, providing a convenient way to populate your database with initial data.
 
 - Automatic Prisma Client Generation: In your `package.json`, the `postinstall` script is configured as `"postinstall": "prisma generate"`. This ensures that the Prisma client is automatically generated after installation, simplifying your deployment process.
+- `.gitignore` File Automation: When Prisma is added, `create-next-app-trpc` automatically updates the `.gitignore` file to include `.env`, ensuring that your environment variables are not exposed in version control. This helps maintain the security and integrity of your application.
 
 To include Prisma in your project setup, simply select 'Yes' when prompted during the creation process. This will automatically configure Prisma in your new Next.js project, saving you the time and effort of manual setup.
 
@@ -104,7 +105,7 @@ The package will set up a new Next.js project with the following packages pre-in
 - decimal.js
 - superjson
 
-In addition to these, create-next-app-trpc also offers optional support for:
+In addition to these, `create-next-app-trpc` also offers optional support for:
 
 - Prisma: If opted, adds `prisma` and `@prisma/client` for robust database management.
 - Zod: If chosen, includes `zod` for TypeScript-first schema validation.
