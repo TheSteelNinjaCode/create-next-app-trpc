@@ -37,6 +37,14 @@ async function main() {
   // ========================================
   // await prisma.$executeRaw`ALTER TABLE users AUTO_INCREMENT = 1`;
   // ========================================
+  // Prisma Seed Data for MongoDB
+  // User
+  // Code below is for MongoDB
+  // ========================================
+  // await prisma.user.deleteMany({});
+  // await prisma.user.createMany({ data: userData });
+  // No need to reset sequences in MongoDB
+  // ========================================
 }
 
 main()
