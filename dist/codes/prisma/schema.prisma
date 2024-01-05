@@ -14,8 +14,19 @@ model User {
     id            String    @id @default(cuid())
     name          String?
     email         String?   @unique
+    password      String?
     emailVerified DateTime?
     image         String?
 
+    roleId   Int?
+    userRole UserRole? @relation(fields: [roleId], references: [id])
+
     @@map("users")
+}
+
+model UserRole {
+    id   Int    @id @default(autoincrement())
+    name String @unique
+
+    user User[]
 }

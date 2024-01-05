@@ -21,4 +21,11 @@ export const UserSchema = z.object({
   email: String.nullable(),
   emailVerified: DateTime.nullable(),
   image: String.nullable(),
+
+  roleId: Int,
+});
+
+export const UserRoleSchema = z.object({
+  id: Int,
+  name: String,
 });

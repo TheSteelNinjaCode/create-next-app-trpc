@@ -57,7 +57,7 @@ To include Prisma in your project setup, simply select 'Yes' when prompted durin
 - App Router Configuration (--app): Pre-configured router setup for immediate use.
 - Import Aliases (--import-alias): Simplify imports with the default alias "@/\*" for cleaner code.
 
-# Project Structure
+## Project Structure
 
 ```bash
 map -> .
@@ -65,18 +65,24 @@ map -> .
 │   ├── migrations # <-- if prisma is added
 │   │   └── [...]
 │   ├── schema.prisma # <-- if prisma is added
-│   ├── seed.js # <-- if prisma is added
+│   ├── seed.ts # <-- if prisma is added
 │   └── [...]
 ├── src
 │   ├── app
+│   │   ├── _context # <-- context (optional) (if next-auth is added)
+│   │   │   └── AuthProvider.tsx # <-- authentication provider (if next-auth is added)
 │   │   ├── _trpc  # <-- add withTRPC()-HOC here
 │   │   │   └── client.ts  # <-- tRPC client
 │   │   │   └── Provider.tsx  # <-- tRPC provider
 │   │   │   └── serverClient.ts  # <-- tRPC server client
 │   │   ├── api
-│   │   │   └── trpc
-│   │   │       └── [trpc]
-│   │   │           └── route.ts  # <-- tRPC HTTP handler
+│   │   │   ├── trpc
+│   │   │   │   └── [trpc]
+│   │   │   │       └── route.ts  # <-- tRPC HTTP handler
+│   │   │   └── auth
+│   │   │       └── [...nextauth]  # <-- if next-auth is added
+│   │   │           └── options.ts # <-- next-auth options if next-auth is added
+│   │   │           └── route.ts  # <-- next-auth HTTP handler if next-auth is added
 │   │   └── [...]
 │   ├── lib # <-- utility functions
 │   │   ├── prisma.ts  # <-- prisma client (if prisma is added)
@@ -88,9 +94,13 @@ map -> .
 │   │   │   ├── user.ts  # <-- sub routers (optional)
 │   │   │   ├── post.ts  # <-- sub routers (optional)
 │   │   │   └── [...]
+│   │   ├── context.ts  # <-- context (optional if next-auth is added)
 │   │   ├── index.ts  # <-- main router
 │   │   └── trpc.ts      # <-- procedure helpers
+│   ├── middleware.ts  # <-- middleware if next-auth is added
 │   └── [...]
+├── .env # <-- environment variables (if prisma or next-auth is added)
+├── next-auth.d.ts  # <-- next-auth config if next-auth is added
 └── [...]
 ```
 
@@ -107,9 +117,10 @@ The package will set up a new Next.js project with the following packages pre-in
 
 In addition to these, `create-next-app-trpc` also offers optional support for:
 
-- Prisma: If opted, adds `prisma` and `@prisma/client` for robust database management.
+- Prisma: If opted, adds `prisma` and `@prisma/client` for robust database management. Additionally, if Prisma is added, it will also include `bcrypt` and `@types/bcrypt` to simplify the process of encrypting passwords for enhanced security.
 - Zod: If chosen, includes `zod` for TypeScript-first schema validation.
 - React-Hook-Form: If selected, integrates `react-hook-form` for efficient form handling in React applications.
+- Next-Auth: If opted, adds `next-auth` for authentication and authorization in Next.js applications.
 
 These optional integrations can be added during the setup process, enhancing your development experience with additional capabilities tailored to your project's needs.
 
@@ -151,4 +162,4 @@ Contributions to `create-next-app-trpc` are welcome. If you have any suggestions
 
 ## License
 
-This project is licensed under the ISC License. The full license text can be found in the `LICENSE` file in the project repository. This permissive license allows for the use, modification, distribution, and private use of the software with minimal restrictions.
+This project is licensed under the MIT License. The full license text can be found in the `LICENSE` file in the project repository.

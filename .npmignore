@@ -1,3 +1,5 @@
 # index code base
-index-code.js
-index-code-min.js
+/index.ts
+
+# test code base
+/test.txt

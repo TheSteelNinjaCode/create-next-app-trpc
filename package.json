@@ -1,35 +1,42 @@
 {
   "name": "create-next-app-trpc",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A package for quickly creating Latest Next.js projects with tRPC and React Query",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "type": "module",
   "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "create-next-app-trpc": "index.js"
+    "create-next-app-trpc": "./dist/index.js"
   },
   "keywords": [
     "nextjs",
     "trpc",
     "react-query",
+    "decimal.js",
+    "superjson",
     "prisma",
     "zod",
     "react-hook-form",
-    "decimal.js",
-    "superjson",
+    "next-auth",
     "boilerplate"
   ],
-  "author": "Jefferson Abraham Omier",
-  "license": "ISC",
+  "author": "Jefferson Abraham Omier <thesteelninjacode@gmai.com>",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",
-    "child_process": "^1.0.2",
     "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.3.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheSteelNinjaCode/create-next-app-trpc"
+    "url": "git+https://github.com/TheSteelNinjaCode/create-next-app-trpc"
   }
 }
