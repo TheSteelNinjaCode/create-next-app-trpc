@@ -155,6 +155,7 @@ For comprehensive guides and best practices, refer to the official documentation
 - React Query Documentation: [React Query Official Docs](https://react-query.tanstack.com/)
 - Superjson Documentation: [Superjson Official Docs](https://www.npmjs.com/package/superjson)
 - Decimal.js Documentation: [Decimal.js Official Docs](https://mikemcl.github.io/decimal.js/)
+- Next-Auth Documentation: [Next-Auth Official Docs](https://next-auth.js.org/)
 
 ## Contributing
 
