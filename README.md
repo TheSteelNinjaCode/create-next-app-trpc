@@ -149,12 +149,13 @@ For comprehensive guides and best practices, refer to the official documentation
 
 - Next.js Documentation: [Next.js Official Docs](https://nextjs.org/docs/getting-started)
 - tRPC Documentation: [tRPC Official Docs](https://trpc.io/)
+- Superjson Documentation: [Superjson Official Docs](https://www.npmjs.com/package/superjson)
+- Decimal.js Documentation: [Decimal.js Official Docs](https://mikemcl.github.io/decimal.js/)
 - Prisma Documentation: [Prisma Official Docs](https://www.prisma.io/docs/)
+- bycrypt Documentation: [bcrypt Official Docs](https://www.npmjs.com/package/bcrypt)
 - Zod Documentation: [Zod Official Docs](https://zod.dev/)
 - React-Hook-Form Documentation: [react-hook-form Official Docs](https://react-hook-form.com/)
 - React Query Documentation: [React Query Official Docs](https://react-query.tanstack.com/)
-- Superjson Documentation: [Superjson Official Docs](https://www.npmjs.com/package/superjson)
-- Decimal.js Documentation: [Decimal.js Official Docs](https://mikemcl.github.io/decimal.js/)
 - Next-Auth Documentation: [Next-Auth Official Docs](https://next-auth.js.org/)
 
 ## Contributing
