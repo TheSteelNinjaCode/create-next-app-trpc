@@ -37,7 +37,7 @@ This command will create a new Next.js project and set up the necessary configur
 
   ```bash
   "prisma": {
-    "seed": "node prisma/seed.js"
+    "seed": "ts-node --compiler-options {"module":"CommonJS"} prisma/seed.ts"
   }
   ```
 
@@ -73,8 +73,10 @@ map -> .
 │   │   │   └── AuthProvider.tsx # <-- authentication provider (if next-auth is added)
 │   │   ├── _trpc  # <-- add withTRPC()-HOC here
 │   │   │   └── client.ts  # <-- tRPC client
-│   │   │   └── Provider.tsx  # <-- tRPC provider
+│   │   │   └── TrpcProvider.tsx  # <-- tRPC provider
 │   │   │   └── serverClient.ts  # <-- tRPC server client
+│   │   ├── _stores  # <-- if zustand is added
+│   │   │   └── useStore.ts  # <-- zustand store
 │   │   ├── api
 │   │   │   ├── trpc
 │   │   │   │   └── [trpc]
@@ -121,10 +123,11 @@ In addition to these, `create-next-app-trpc` also offers optional support for:
 - Zod: If chosen, includes `zod` for TypeScript-first schema validation.
 - React-Hook-Form: If selected, integrates `react-hook-form` for efficient form handling in React applications.
 - Next-Auth: If opted, adds `next-auth` for authentication and authorization in Next.js applications.
+- Zustand: If selected, includes `zustand` for state management in React applications.
 
 These optional integrations can be added during the setup process, enhancing your development experience with additional capabilities tailored to your project's needs.
 
-These dependencies and optional integrations are key in providing a robust setup for working with tRPC and React Query (along with Prisma, Zod, and react-hook-form, if opted) in a Next.js project.
+These dependencies and optional integrations are key in providing a robust setup for working with tRPC and React Query (along with Prisma, Zod, and react-hook-form, next-auth, zustand if opted) in a Next.js project.
 
 ## Example
 
@@ -157,6 +160,7 @@ For comprehensive guides and best practices, refer to the official documentation
 - React-Hook-Form Documentation: [react-hook-form Official Docs](https://react-hook-form.com/)
 - React Query Documentation: [React Query Official Docs](https://react-query.tanstack.com/)
 - Next-Auth Documentation: [Next-Auth Official Docs](https://next-auth.js.org/)
+- Zustand Documentation: [Zustand Official Docs](https://zustand-demo.pmnd.rs/)
 
 ## Contributing
 

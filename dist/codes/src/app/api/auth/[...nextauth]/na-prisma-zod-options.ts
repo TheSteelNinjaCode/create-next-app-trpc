@@ -31,7 +31,7 @@ export const options: NextAuthOptions = {
 
         if (
           user &&
-          (await bcrypt.compare(credentials?.password ?? "", user.password))
+          (await bcrypt.compare(credentials?.password ?? "", user.password ?? ""))
         ) {
           return user;
         } else {

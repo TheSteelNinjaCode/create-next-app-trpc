@@ -11,7 +11,7 @@ export default async function Dashboard() {
   }
   return (
     <>
-      Welcome: {session?.user.name} -{" "}
+      Welcome: {session?.user.name} - {" "}
       <Link href="/api/auth/signout?callbackUrl=/">Logout</Link>
     </>
   );

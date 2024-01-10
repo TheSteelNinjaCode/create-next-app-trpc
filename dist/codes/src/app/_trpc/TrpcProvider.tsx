@@ -16,7 +16,7 @@ superjson.registerCustom<Decimal, string>(
   "decimal.js"
 );
 
-export default function Provider({ children }: { children: React.ReactNode }) {
+export default function TrpcProvider({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(() => new QueryClient({}));
 
   // Define a variable for the API URL

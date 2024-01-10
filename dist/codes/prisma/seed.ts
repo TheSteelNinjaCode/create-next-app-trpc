@@ -17,7 +17,7 @@ const userData = [
   {
     name: "Juan",
     email: "j@gmail.com",
-    password: "$2b$10$mgjotYzIXwrK1MCWmu4tgeUVnLcb.qzvqwxOq4FXEL8k2obwXivDi", // TODO template password 1234 (bcrypt) testing only
+    password: "$2b$10$mgjotYzIXwrK1MCWmu4tgeUVnLcb.qzvqwxOq4FXEL8k2obwXivDi", // TODO: template password 1234 (bcrypt) testing only
     roleId: 1,
   },
 ];
