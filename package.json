@@ -1,6 +1,6 @@
 {
   "name": "create-next-app-trpc",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "A package for quickly creating Latest Next.js projects with tRPC and React Query",
   "main": "./dist/index.js",
   "type": "module",
