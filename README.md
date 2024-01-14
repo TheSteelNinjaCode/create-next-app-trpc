@@ -45,6 +45,7 @@ This command will create a new Next.js project and set up the necessary configur
 
 - Automatic Prisma Client Generation: In your `package.json`, the `postinstall` script is configured as `"postinstall": "prisma generate"`. This ensures that the Prisma client is automatically generated after installation, simplifying your deployment process.
 - `.gitignore` File Automation: When Prisma is added, `create-next-app-trpc` automatically updates the `.gitignore` file to include `.env`, ensuring that your environment variables are not exposed in version control. This helps maintain the security and integrity of your application.
+- `shadowDatabaseUrl = env("SHADOW_DATABASE_URL")` is added to your `schema.prisma` file. This allows you to use the `SHADOW_DATABASE_URL` environment variable to connect to your database, providing a convenient way to manage your database connection.
 
 To include Prisma in your project setup, simply select 'Yes' when prompted during the creation process. This will automatically configure Prisma in your new Next.js project, saving you the time and effort of manual setup.
 
