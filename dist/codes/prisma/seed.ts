@@ -30,7 +30,7 @@ async function main() {
   // ----------------------------------------
   // await prisma.userRole.deleteMany();
   // await prisma.userRole.createMany({ data: userRoleData });
-  // await prisma.$executeRaw`ALTER SEQUENCE userRole_id_seq RESTART WITH 1`;
+  // await prisma.$executeRaw`ALTER SEQUENCE UserRole_id_seq RESTART WITH 1`;
   // ----------------------------------------
   // User
   // ----------------------------------------
@@ -44,7 +44,7 @@ async function main() {
   // ----------------------------------------
   // await prisma.userRole.deleteMany();
   // await prisma.userRole.createMany({ data: userRoleData });
-  // await prisma.$executeRaw`ALTER TABLE userRole AUTO_INCREMENT = 1`;
+  // await prisma.$executeRaw`ALTER TABLE UserRole AUTO_INCREMENT = 1`;
   // ----------------------------------------
   // User
   // ----------------------------------------
