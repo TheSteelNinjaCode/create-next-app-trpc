@@ -20,7 +20,8 @@ npm install -g create-next-app-trpc
 
 This will install the package globally on your system, allowing you to use it to create new Next.js projects with tRPC and React Query.
 
-Usage
+## Usage
+
 After installing the package, you can create a new Next.js project by running:
 
 ```bash
@@ -103,7 +104,7 @@ map -> .
 │   │   └── trpc.ts      # <-- procedure helpers
 │   ├── middleware.ts  # <-- middleware if next-auth is added
 │   └── [...]
-├── .env # <-- environment variables (if prisma or next-auth is added)
+├── .env # <-- environment variables (if prisma or next-auth is added) automatic added to .gitignore
 ├── next-auth.d.ts  # <-- next-auth config if next-auth is added
 └── [...]
 ```
