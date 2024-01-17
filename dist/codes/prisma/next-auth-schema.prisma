@@ -51,7 +51,7 @@ model User {
     accounts Account[]
     sessions Session[]
 
-    @@map("users")
+    @@map("Users")
 }
 
 model VerificationToken {

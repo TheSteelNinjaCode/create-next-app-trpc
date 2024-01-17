@@ -21,7 +21,7 @@ model User {
     roleId   Int?
     userRole UserRole? @relation(fields: [roleId], references: [id])
 
-    @@map("users")
+    @@map("Users")
 }
 
 model UserRole {

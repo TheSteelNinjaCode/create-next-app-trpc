@@ -30,13 +30,12 @@ async function main() {
   // ----------------------------------------
   // await prisma.userRole.deleteMany();
   // await prisma.userRole.createMany({ data: userRoleData });
-  // await prisma.$executeRaw`ALTER SEQUENCE UserRole_id_seq RESTART WITH 1`;
+  // await prisma.$executeRaw`ALTER SEQUENCE "UserRole_id_seq" RESTART WITH 1`;
   // ----------------------------------------
   // User
   // ----------------------------------------
   // await prisma.user.deleteMany();
   // await prisma.user.createMany({ data: userData });
-  // await prisma.$executeRaw`ALTER SEQUENCE users_id_seq RESTART WITH 1`;
   // ========================================
   // Code for MySQL
   // ----------------------------------------
@@ -50,7 +49,6 @@ async function main() {
   // ----------------------------------------
   // await prisma.user.deleteMany();
   // await prisma.user.createMany({ data: userData });
-  // await prisma.$executeRaw`ALTER TABLE users AUTO_INCREMENT = 1`;
   // ========================================
   // Code for MongoDB
   // ----------------------------------------

@@ -85,6 +85,8 @@ map -> .
 │   │   │       └── [...nextauth]  # <-- if next-auth is added
 │   │   │           └── options.ts # <-- next-auth options if next-auth is added
 │   │   │           └── route.ts  # <-- next-auth HTTP handler if next-auth is added
+│   │   ├── dashboard # <-- dashboard page (optional if next-auth is added)
+│   │   │   └── [...]
 │   │   └── [...]
 │   ├── lib # <-- utility functions
 │   │   ├── prisma.ts  # <-- prisma client (if prisma is added)
@@ -161,6 +163,10 @@ For comprehensive guides and best practices, refer to the official documentation
 - React Query Documentation: [React Query Official Docs](https://react-query.tanstack.com/)
 - Next-Auth Documentation: [Next-Auth Official Docs](https://next-auth.js.org/)
 - Zustand Documentation: [Zustand Official Docs](https://zustand-demo.pmnd.rs/)
+
+## For video tutorials, check out
+
+- [How to use create-next-app-trpc](https://www.youtube.com/watch?v=IV-w8D-ZcEU&list=PLS-62wu4j8sRkQqN_x0cQAcso38bzIT4o)
 
 ## Contributing
 
