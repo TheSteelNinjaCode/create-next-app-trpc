@@ -2,16 +2,6 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-// UserRole
-const userRoleData = [
-  {
-    name: "Admin",
-  },
-  {
-    name: "User",
-  },
-];
-
 // User
 const userData = [
   {
@@ -22,45 +12,55 @@ const userData = [
   },
 ];
 
+// UserRole
+const userRoleData = [
+  {
+    name: "Admin",
+  },
+  {
+    name: "User",
+  },
+];
+
 async function main() {
   // ========================================
   // Code for PostgreSQL
+  // ----------------------------------------
+  // User
+  // ----------------------------------------
+  // await prisma.user.deleteMany();
+  // await prisma.user.createMany({ data: userData });
   // ----------------------------------------
   // UserRole
   // ----------------------------------------
   // await prisma.userRole.deleteMany();
   // await prisma.userRole.createMany({ data: userRoleData });
   // await prisma.$executeRaw`ALTER SEQUENCE "UserRole_id_seq" RESTART WITH 1`;
+  // ========================================
+  // Code for MySQL
   // ----------------------------------------
   // User
   // ----------------------------------------
   // await prisma.user.deleteMany();
   // await prisma.user.createMany({ data: userData });
-  // ========================================
-  // Code for MySQL
   // ----------------------------------------
   // UserRole
   // ----------------------------------------
   // await prisma.userRole.deleteMany();
   // await prisma.userRole.createMany({ data: userRoleData });
   // await prisma.$executeRaw`ALTER TABLE UserRole AUTO_INCREMENT = 1`;
+  // ========================================
+  // Code for MongoDB
   // ----------------------------------------
   // User
   // ----------------------------------------
   // await prisma.user.deleteMany();
   // await prisma.user.createMany({ data: userData });
-  // ========================================
-  // Code for MongoDB
   // ----------------------------------------
   // UserRole
   // ----------------------------------------
   // await prisma.userRole.deleteMany();
   // await prisma.userRole.createMany({ data: userRoleData });
-  // ----------------------------------------
-  // User
-  // ----------------------------------------
-  // await prisma.user.deleteMany();
-  // await prisma.user.createMany({ data: userData });
   // ========================================
 }
 
