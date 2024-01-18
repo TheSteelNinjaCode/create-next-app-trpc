@@ -2,7 +2,7 @@
   "name": "create-next-app-trpc",
   "version": "1.2.5",
   "description": "A package for quickly creating Latest Next.js projects with tRPC and React Query",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "create-next-app-trpc": "./dist/index.js"
+    "create-next-app-trpc": "dist/index.js"
   },
   "keywords": [
     "nextjs",
@@ -39,6 +39,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheSteelNinjaCode/create-next-app-trpc"
+    "url": "git+https://github.com/TheSteelNinjaCode/create-next-app-trpc.git"
   }
 }
