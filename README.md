@@ -124,7 +124,7 @@ In addition to these, `create-next-app-trpc` also offers optional support for:
 
 - Prisma: If opted, adds `prisma` and `@prisma/client` for robust database management. Additionally, if Prisma is added, it will also include `bcrypt` and `@types/bcrypt` to simplify the process of encrypting passwords for enhanced security.
 - Zod: If chosen, includes `zod` for TypeScript-first schema validation.
-- React-Hook-Form: If selected, integrates `react-hook-form` for efficient form handling in React applications.
+- React-Hook-Form: If selected, integrates `react-hook-form`, `@hookform/resolvers` for efficient form handling in React applications.
 - Next-Auth: If opted, adds `next-auth` for authentication and authorization in Next.js applications.
 - Zustand: If selected, includes `zustand` for state management in React applications.
 
